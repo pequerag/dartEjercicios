@@ -20,7 +20,6 @@ class Cuadrado{
       this.area = lado * lado;
 
 
-
 }
 
 
@@ -30,5 +29,5 @@ main() {
     final cuadrado = new Cuadrado(10);
 
     print(cuadrado.area);
-    
+
 }
