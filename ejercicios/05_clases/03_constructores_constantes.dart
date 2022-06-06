@@ -24,5 +24,5 @@ main() {
   print(sanFrancisco4 == sanFrancisco5);
   print(sanFrancisco5 == sanFrancisco6);
 
-  
+  //Los constrctores constantes si tienen los mismos valores, apuntan al mismo lugar de memoria
 }
