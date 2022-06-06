@@ -8,7 +8,8 @@ class Rectangulo{
   String? tipo; // cuadrado base = altura, rectangulo base != altura  
 
   factory Rectangulo( int base, int altura){
-    // Los factory nunca van a crear una nueva instancia de la clase
+    // Los factory nunca crean una instancia por si solo
+    //solo pueden retornar la creacion de una nueva instancia, o si la ya tuvieramos se puede regresar
 
     if ( base == altura){
       return Rectangulo.cuadrado(base);
