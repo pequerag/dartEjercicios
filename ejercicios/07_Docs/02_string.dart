@@ -30,5 +30,5 @@ void main(List<String> args) {
   print('Split: ${ nombreCompleto.split(' ')}');
 
   print('Capitalizar: ${ nombreCompleto.substring(0,nombreCompleto.length - 1)}${ nombreCompleto[nombreCompleto.length -1].toUpperCase()}');
-
+  
 }
