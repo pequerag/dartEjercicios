@@ -4,7 +4,7 @@ main(List<String> args) {
   
   List<int>  lista = [1,2,3,4,5];
   List<int>? lista2;
-  List<int>  lisa3 = [3,1,2,15,-10];
+  List<int>  lista3 = [3,1,2,15,-10];
 
   List<String> nombres = ['Tony','Peter'];
 
@@ -24,5 +24,40 @@ main(List<String> args) {
 
   Map nombreMapa = nombres.asMap();
   print('NombreMapa: ${ nombreMapa[1]}');
+
+  print('IndexOf: ${ nombres.indexOf('Peter')}');
+
+  // int mayor3 = lista.indexWhere((numero) {
+  //   if(numero > 3){
+  //     return true;
+  //   } else{
+  //     return false;
+  //   }
+  // });
+
+   int mayor3 = lista.indexWhere((numero) => (numero > 3) ? true : false);
+
+  print('indexWhere mayor 3: ${mayor3}');
+
+  print('Remove: ${ nombres.remove('Tony')}');
+  print('Remove: ${ nombres }');
+
+  lista.shuffle(); 
+  print('Shuffle: $lista');
+
+  lista3.sort();
+  print('Sort: ${ lista3 }');
+  print('Reverse: ${ lista3.reversed.toList() }');
+
+
+  nombres.forEach((nombre) {
+    nombre = nombre.toUpperCase();
+    print(nombre);
+   });
+
+   print('Listado: ${ nombres}');
+
+   final newList = nombres.map((nombre) => nombre.toUpperCase()).toList();
+   print('newList: ${newList}');
 
 }
